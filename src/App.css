@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Noto+Sans+JP:wght@500&family=Quicksand:wght@400&display=swap');
+
+:root{
+  --padding: 10px 2%;
+  --padding2: 12px 7px;
+  --background: #1a222d;
+  --background2: #E3E6E6;
+  --light-background: #273344;
+  --lighter-background: #374456;
+  --white: #fff;
+  --orange: #FF9900;
+  --orange2: #fac270;
+  --orange2-dark: #f6b656;
+  --light-color: #767373;
+  --box-shadow: -2px 4px 4px 2px #7d76767d;
+}
+*{
+  padding: 0;
+  margin: 0;
+  transition: all .3s linear;
+  font-family: 'Noto Sans JP', sans-serif;
+};
+
+.is-active{
+  pointer-events: painted;
+  display: none;
+};

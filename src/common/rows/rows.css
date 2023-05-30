@@ -1,0 +1,70 @@
+.rows{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    z-index: 7;
+    position: relative;
+    padding: var(--padding);
+}
+.firstRow{
+    margin-top: -22rem;
+}
+
+
+/* Large Row Begins */
+.scrollBarContainer{
+    margin: var(--padding);
+    padding: var(--padding);
+    background: #fff;
+    position:relative;
+}
+.scrollBarContainer h2{
+    font-size: 18px;
+    padding-bottom: 12px;
+}
+.scrollBarContainer .imgContainer{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+.scrollBarContainer img{
+    width: 155px;
+}
+
+.imgContainer::-webkit-scrollbar{
+    display: block;
+}
+
+.imgContainer .btns{
+    width: 100%;
+    position: absolute;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+.imgContainer  .btns .btn{
+    font-size: 35px;
+    position: absolute;
+    transform: scale(.5, 1.5);
+    transition: none;
+    background: #fff;
+    padding: 0 2rem;
+    border-radius: 5px;
+    border-color: none;
+}
+
+.imgContainer .btns .btn.prev{
+    left: 7px;
+    margin-left: -1.8rem;
+    border-top: 1px solid rgba(15, 15, 15, 0.3);
+    border-right: 1px solid rgba(12, 11, 11, 0.3);
+    border-bottom: 1px solid rgba(12, 11, 11, 0.3);
+    color: rgb(93, 92, 92);
+}
+.imgContainer .btns .btn.next{
+    right: 1.7rem;
+    border-top: 1px solid rgba(15, 15, 15, 0.3);
+    border-left: 1px solid rgba(12, 11, 11, 0.3);
+    border-bottom: 1px solid rgba(12, 11, 11, 0.3);
+    color: rgb(93, 92, 92);
+}

@@ -1,0 +1,30 @@
+.signInBtn{
+    width: 100%;
+    padding: 8px 0;
+    background: #f2d026;
+    border: none;
+    border-radius: 10px;
+    margin-top: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.mainBtn{
+    display: inline-block;
+    border: 1px solid #8a8888;
+    color: #bebdbd;
+    padding: 4px 14px;
+    font-size: 14px;
+    background: none;
+    gap: 2rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.mainBtn span{
+    padding-left: .5rem;
+}
+.mainBtn .dropdown{
+    padding-left: 1.3rem;
+    color: #8a8888;
+    font-size: 12px;
+}

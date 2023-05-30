@@ -1,0 +1,104 @@
+.menuContainer{
+    width: 30vw;
+    background: var(--background2);
+    position: fixed;
+    z-index: 9;
+    height: 100vh;
+    overflow-y: scroll;
+    transition: transform .7s ease-in-out; 
+}
+.menuContainer.fadeIn{
+    animation-name: fadeIn;
+    animation-duration: .3s;
+}
+.menuContainer.fadeOut{
+    animation-name: fadeOut;
+    animation-duration: .3s;
+}
+@keyframes fadeIn{
+    from {width: 0;}
+    to{width: 30vw;}
+}
+@keyframes fadeOut{
+    from {width: 30vw;}
+    to{width: 0;}
+}
+.hc{
+    position: relative;
+}
+.menuContainer .hc .header{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background: var(--background);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    padding: .5rem 2rem;
+    width: 23.8vw;
+    z-index: 12;
+
+}
+.menuContainer .header i{
+    padding: 4px;
+    font-size: 27px;
+    background: var(--background2);
+    color: var(--background);
+    border-radius: 50%;
+    text-align: center;
+    height: 25px;
+    width: 25px;
+}
+.menuContainer .menu{
+    margin-top: 1rem;
+    border-bottom: 1px solid rgb(190, 189, 189, .8);
+}
+
+.menuContainer .menu .menuHeader{
+    padding: 0 2rem;
+    color: #000;
+    font-size: 18px;
+}
+.close{
+    color: #282727;
+    background: none;
+    position: absolute;
+    line-height: 2rem;
+    margin-top: 1rem;
+    left: 27.5rem;
+    z-index: 88;
+    border: none;
+    font-size: 22px;
+    transform: scale(2,1);
+    cursor: pointer;
+}
+
+
+/* Sub Menu Begins */
+.subMenuContainer{
+    margin-top: 4rem;
+    width: 100%;
+}
+.subMenu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    align-items: center;
+    padding: 5px 2rem;
+    cursor: pointer;
+}
+.subMenu i{
+    transform: scale(.5, 1.2);
+    font-size: 22px;
+    color: rgb(146, 147, 148);
+}
+.subMenu small{
+    color: #585959;
+    font-size: 14px;
+}
+.subMenu:hover{
+    background: #d5d7d7;
+}
+.subMenu:hover i{
+    color: #000;
+}

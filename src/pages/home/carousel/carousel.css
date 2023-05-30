@@ -1,0 +1,67 @@
+.slides{
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+    height: 100vh;
+    position: relative;
+}
+.slides .btns{
+    width: 100%;
+    position: absolute;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+.slides .btns .btn{
+    font-size: 65px;
+    position: absolute;
+    transform: scale(.5, 1.2);
+    padding: 10vh 3.5rem;
+    border-radius: 12px;
+    transition: none;
+    font-weight: 100;
+}
+.slides .btns .btn:hover{
+    text-shadow:  2px 0 2px #fff;
+    border: 2px solid #169ec4; 
+    outline: 2px solid #fff;
+}
+.slides .btns .btn.prev{
+    left: -2.2rem;
+    text-shadow: 2px 0 2px #fff;
+}
+.slides .btns .btn.next{
+    right: -2.2rem;
+    text-shadow: -2px 0 2px #fff;
+}
+
+.slides .slide{
+    background: #ecc3c3;
+    display: none;
+    overflow-y: hidden;
+    width: 100%;
+    animation-name: fade;
+    animation-duration: .3s;
+}
+
+@keyframes fade {
+    from { margin-left: 100rem;}
+    to { margin-left: 0;}
+}
+.slides .slide img{
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.slides .slide.currentSlide{
+    display: block;
+}
+
+.slides .slide.currentSlide.fadePrev{
+    animation-name: fade2;
+    animation-duration: .3s;
+}
+@keyframes fade2 {
+    from { margin-right: 100rem;}
+    to { margin-right: 0;}
+}

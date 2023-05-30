@@ -1,0 +1,85 @@
+.myFooter{
+    color: #fff;
+    text-align: center;
+}
+/* TOP FOOTER */
+.topFooter{
+    background: var(--lighter-background);
+    font-size: 14px;
+    padding: .8rem 0;
+    width: 100%;
+}
+
+
+/* MIDFOOTER */
+.midFooter{
+    background: var(--light-background);
+}
+.midFooter .midTop{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 8rem;
+}
+.midTop .quickLinks{
+    text-align: left;
+}
+
+.midTop .quickLinks ul li{
+    list-style: none;
+    font-size: 13px;
+    color: #E3E6E6;
+    padding: 5px 0;
+}
+.midFooter .midButtom{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(147, 148, 148, .3);
+}
+.midFooter .midButtom img{
+    width: 85px;
+}
+.midFooter .midButtom .btnArea{
+    display: flex;
+    gap: .5rem;
+}
+
+
+/* Bottom Footer  */
+.bottomFooter{
+    background: var(--background);
+    padding: 3rem 8rem;
+    font-size: 12px;
+
+}
+.bottomFooter .bottomTop{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2rem;
+    text-align: left;
+}
+.bottomFooter .bottomTop p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.bottomFooter span{
+    color: #848686;
+}
+.bottomFooter .licence{
+    text-align: center;
+    margin-top: 3rem;
+}
+.bottomFooter .licence .policy{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 3px;   
+}
+.bottomFooter .licence .policy p{
+    cursor: pointer;
+}
+.bottomFooter .licence .policy p:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,91 @@
+.cartContainer{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: var(--padding);
+    gap: 1rem;
+}
+
+.cartItems{
+    background: #fff;
+    border-radius: 5px;
+    padding: 1rem .8rem;
+    position: relative;
+}
+
+.item img{
+    width: 208px;
+}
+
+.totals{
+    color: #6f6e6e;
+}
+.totals span{
+    color: #000;
+}
+
+.description{
+    color: #4e4e4e; 
+}
+.topborder{
+    border-bottom: 1px solid #a9a6a64d;
+    padding-top: .5rem;
+}
+.cartItems .priceT{
+    float: right;
+    color: grey;
+}
+.cartItems .item{
+    display: flex;
+    position: relative;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    gap: 1rem;
+    border-bottom: 1px solid #a9a6a64d;
+}
+.cartItems .item .features{
+    margin-top: 2rem;
+}
+.price{
+    margin-top: 2rem;
+}
+.cartItems .item .features .crud{
+    display: flex;
+    gap: .5rem;
+    position: absolute;
+    bottom: 5rem;
+    align-items: center;
+}
+.cartItems .item .features .crud .quantity{
+    display: inline-flex;
+    gap: .4rem;
+    align-items: center;
+}
+.quantity .operator{
+    background: #eae7e7;
+    color: #727070;
+    padding: .2rem .7rem;
+    border-radius: 5px;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.quantity .operator:hover{
+    background: #d4d1d1;
+}
+.deleteBtn{
+    color: var(--orange);
+    border-left: 1px solid #625f5f4d;
+    padding-left: .5rem;
+    cursor: pointer;
+}
+.subTotal{
+    float: right;
+}
+
+/* Total begins  */
+.total{
+    background: #fff;
+    height: 12vh;
+    padding: 1rem .8rem;
+    border-radius: 5px;
+}
